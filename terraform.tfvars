@@ -1,7 +1,0 @@
-location            = "West Europe"
-resource_group_name = "rg-terraform-demo"
-vm_name             = "vm-demo"
-admin_username      = "azureuser"
-admin_password      = "Password1234!"
-env 				= "dev"
-prefix 				= "web"
