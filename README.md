@@ -72,3 +72,25 @@ Security was a key focus in this project, with multiple measures implemented to 
 - Separation of configuration and secrets
 - Reusable modules reduce risk of misconfiguration
 
+## ▶️ How to Deploy
+
+### Prerequisites
+- Terraform installed
+- Azure subscription
+- Azure CLI authenticated
+
+### Steps
+
+1. Initialize Terraform:
+
+terraform init
+terraform plan
+terraform apply
+
+
+
+
+
+Author:
+Guilherme Alhinho
+Cloud Security & IAM Enthusiast
