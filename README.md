@@ -23,3 +23,31 @@ The infrastructure is organized using a modular design to separate responsibilit
 - Reusable components
 - Separation of concerns (network vs compute)
 - Security-first approach
+
+## 📁 Terraform Structure
+
+The project follows a modular Terraform structure to improve reusability and maintainability.
+
+### Root Module
+- Defines providers and core configuration
+- Calls child modules (network and compute)
+- Passes variables between modules
+
+### Modules
+
+#### Network Module
+- Creates Virtual Network (VNet)
+- Defines Subnet
+- Configures Network Security Group (NSG)
+- Associates NSG with Subnet
+
+#### Compute Module
+- Defines Linux Virtual Machine configuration
+- Uses dynamic naming conventions
+- Accepts network inputs (subnet ID)
+
+### Key Features
+- Use of input variables for flexibility
+- Output values for inter-module communication
+- Local values for naming standardization
+
